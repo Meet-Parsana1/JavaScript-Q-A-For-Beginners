@@ -1,0 +1,55 @@
+<!-- **Run this HTML File to show the output of q39.js File** -->
+
+<!-- Run this HTML File to see the glowing bulb effect -->
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>Question 39</title>
+
+            <style>
+                  /* The bulb itself */
+                  .bulb {
+                        width: 100px;
+                        height: 100px;
+                        background: yellow; /* Bulb color */
+                        border-radius: 50%; /* Make it circular */
+                        margin: 20px;
+                        box-shadow: 0 0 10px #ccc; /* Normal shadow */
+                        transition: box-shadow 0.3s; /* Smooth glow transition */
+                  }
+
+                  /* Glowing effect applied when toggled */
+                  .glow {
+                        box-shadow: 0 0 60px 30px yellow; /* Makes bulb look like it glows */
+                  }
+
+                  /* Button styling */
+                  #btn {
+                        padding: 10px 20px;
+                        font-size: 16px;
+                        cursor: pointer;
+                        background-color: #4caf50;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        margin-top: 40px;
+                        margin-left: 10px;
+                  }
+            </style>
+      </head>
+      <body>
+            <!-- The bulb element -->
+            <div class="bulb T"></div>
+
+            <!-- Button to toggle the glow -->
+            <button id="btn">Toggle Bulb</button>
+
+            <!-- Link to the external JS file that toggles the glow class -->
+            <script src="q39.js"></script>
+      </body>
+</html>

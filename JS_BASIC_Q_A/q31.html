@@ -1,0 +1,40 @@
+<!-- CREATE A TABLE WITHOUT <TBODY>. NOW USE "VIEW PAGE SOURCE" BUTTON TO CHECK WHETHER IT HAS A TBODY OR NOT.  -->
+
+<!-- RUN THIS HTML FILE TO SHOW THE OUTPUT AND ANALYZE THE QUESTION  -->
+
+<!-- 
+Notice there is no <tbody> tag in this code.
+
+      1.View Page Source:
+      When you right-click the page and choose "View Page Source," you will see the HTML you wrote—without a <tbody>.
+      
+      2.Browser Behavior:
+      Modern browsers automatically add a <tbody> element to the DOM if you don’t include one.
+      
+      If you inspect the table using "Inspect Element" (Developer Tools), you will see a <tbody> wrapping your <tr> rows, even though you didn’t write it.
+      But in "View Page Source," you will not see <tbody> because it shows your original code, not the browser’s parsed DOM. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+            />
+            <title>question 31</title>
+      </head>
+      <body>
+            <table>
+                  <tr>
+                        <td>Row 1, Cell 1</td>
+                        <td>Row 1, Cell 2</td>
+                  </tr>
+                  <tr>
+                        <td>Row 2, Cell 1</td>
+                        <td>Row 2, Cell 2</td>
+                  </tr>
+            </table>
+      </body>
+</html>
